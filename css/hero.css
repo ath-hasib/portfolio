@@ -84,6 +84,9 @@
   color: #00ffae;
   font-size: 18px;
 }
+.responsive {
+  display: none;
+}
 
 /* RIGHT SIDE */
 .hero-right {
@@ -137,6 +140,9 @@
   }
   .outline{
     margin-top: 10px;
+  }
+   .responsive {
+    display: inline-block;
   }
   .hero {
   padding: 40px 2%;
