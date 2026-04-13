@@ -23,7 +23,7 @@
 /* ===== HAMBURGER ===== */
 .hamburger {
   display: none;
-  font-size: 26px;
+  font-size: 35px;
   color: #00ffae;
   cursor: pointer;
   z-index: 1001;
@@ -78,6 +78,15 @@
 .nav-links .active::after {
   width: 100%;
 }
+.free-consultent {
+  transition: background-color 1s ease, color 1s ease;
+}
+.free-consultent:hover{
+    background-color: #00ff99;
+    color: black;
+}
+
+
 
 /* ===== MOBILE ===== */
 @media (max-width: 768px) {

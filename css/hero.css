@@ -135,6 +135,9 @@
   .hero-left h1 {
     font-size: 36px;
   }
+  .outline{
+    margin-top: 10px;
+  }
   .hero {
   padding: 40px 2%;
 }
