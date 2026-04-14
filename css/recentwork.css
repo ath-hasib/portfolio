@@ -1,0 +1,110 @@
+.recent-work {
+    background: #050505;
+    padding: 80px 10%;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.section-title{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2{
+  color: #00ffae;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+
+.section-title p{
+  color: #aaa;
+  font-size: 20px;
+  max-width: 750px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+/* Responsive */
+@media(max-width:992px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.card {
+    background: #11161d;
+    border: 1px solid rgba(0, 255, 174, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #00ffae;
+}
+
+/* Image box */
+.img-box {
+    height: 220px;
+    overflow: hidden;
+    border-radius: 8px;
+    position: relative;
+}
+
+.img-box img {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 4s linear;
+}
+
+/* Hover auto scroll effect */
+.card:hover .img-box img {
+    transform: translateY(-60%);
+}
+
+.card h4 {
+    margin: 12px 0 5px;
+    color: #aaa;
+}
+
+.card h1 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+/* Button */
+.btn-recent-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background: #00ff99;
+    color: #000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btn-recent-work:hover {
+    background: #01c778;
+}
