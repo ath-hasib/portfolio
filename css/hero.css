@@ -54,12 +54,8 @@
   font-size: 14px;
 }
 
-/* .primary {
-  background: #00ffae;
-  color: #000;
-} */
 .primary {
-  background: #25D366; /* WhatsApp official color */
+  background: #25D366;
   color: #fff;
   font-size: 18px;
   border: none;
@@ -70,10 +66,11 @@
   font-weight: 600;
   transition: 0.3s;
 }
+
 .primary i {
   font-size: 25px;
 }
-/* Hover effect */
+
 .primary:hover {
   background: #1ebe5d;
 }
@@ -84,6 +81,7 @@
   color: #00ffae;
   font-size: 18px;
 }
+
 .responsive {
   display: none;
 }
@@ -96,25 +94,25 @@
 }
 
 /* IMAGE BOX */
+.image-box {
+  position: relative; /* ✅ IMPORTANT for absolute positioning */
+}
+
 .image-box img {
   width: 300px;
   border-radius: 20px;
   border: 2px solid #00ffae;
   transition: 0.3s;
-  
-  /* ✅ Professional subtle shadow */
+
   box-shadow: 0 0 18px rgba(0, 255, 174, 0.3);
-  
-  /* ✅ Slower & smoother animation */
   animation: glowPulse 1s ease-in-out infinite alternate;
 }
 
-/* Hover */
 .image-box img:hover {
   transform: scale(1.05);
 }
 
-/* 🔥 Glow Animation (Adjusted only) */
+/* 🔥 Glow Animation */
 @keyframes glowPulse {
   0% {
     box-shadow: 
@@ -128,27 +126,88 @@
   }
 }
 
-/* 📱 MOBILE RESPONSIVE */
+/* ========================= */
+/*  NEW STATS DESIGN */
+/* ========================= */
+
+.stats-box {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #00ffae;
+  padding: 5px 25px;
+  border-radius: 50px;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 15px rgba(0,255,174,0.2);
+  animation: floatBox 5s ease-in-out infinite;
+}
+
+.stats-box h2 {
+  color: #00ffae;
+  font-size: 30px;
+  line-height: 0;
+}
+
+.stats-box p {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 0;
+}
+
+/* POSITIONING */
+.experience {
+  bottom: -65px;
+  left: 50px;
+}
+
+.projects {
+  bottom: 5px;
+  right: -110px;
+}
+
+/* FLOAT ANIMATION */
+@keyframes floatBox {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+/* 📱 MOBILE */
 @media (max-width: 768px) {
   .hero-container {
-    flex-direction: column-reverse; /* 🔥 image up, text down */
+    flex-direction: column-reverse;
     text-align: center;
   }
 
   .hero-left h1 {
     font-size: 36px;
   }
+
   .outline{
     margin-top: 10px;
   }
-   .responsive {
+
+  .responsive {
     display: inline-block;
   }
+
   .hero {
-  padding: 40px 2%;
-}
+    padding: 40px 2%;
+  }
+
   .image-box img {
     width: 300px;
     margin-bottom: 20px;
+  }
+
+  /* ✅ MOBILE FIX */
+  .experience {
+    left: -15px;
+    bottom: -40px;
+  }
+
+  .projects {
+    right: -40px;
+    bottom: 40px;
   }
 }
