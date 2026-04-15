@@ -12,11 +12,13 @@
     <link rel="stylesheet" href="css/service.css">
     <link rel="stylesheet" href="css/recentwork.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/skills.css">
+    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body>
     <!-- header section -->
-    <header class="navbar">
+    <header class="navbar" >
         <div class="logo">ATH HASIB</div>
 
         <!-- Hamburger Icon -->
@@ -26,12 +28,11 @@
 
         <nav class="nav-menu" id="navMenu">
             <ul class="nav-links">
-                <li class="active">HOME</li>
-                <li>ABOUT</li>
-                <li>SERVICES</li>
-                <li>PORTFOLIO</li>
-                <li>ASSESS ME</li>
-                <li>CONTACT</li>
+                <li class="active"><a href="#home">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
             <button class="btn outline free-consultent nav-responsive"
                 onclick="window.open('https://calendly.com/tahasib981/30min','_blank')">
@@ -40,7 +41,7 @@
         </nav>
     </header>
     <!-- hero section -->
-    <section class="hero">
+    <section class="hero" id="home">
         <div class="hero-container">
 
             <div class="hero-left">
@@ -88,7 +89,7 @@
         </div>
     </section>
     <!-- service section -->
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
 
             <h2 class="section-title">My Services</h2>
@@ -141,7 +142,77 @@
             </div>
         </div>
     </section>
-    <section class="recent-work">
+
+    <section class="skills" id="skills">
+        <h2 class="section-title">My Skills</h2>
+        <div class="animated-line"></div>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span>HTML</span>
+                    <span>95%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="95"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span>CSS</span>
+                    <span>95%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="95"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span>JavaScript</span>
+                    <span>80%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="80"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span>WordPress</span>
+                    <span>95%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="95"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span>Elementor Pro</span>
+                    <span>95%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="95"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-info">
+                    <span>Shopify</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" data-progress="90"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="recent-work" id="portfolio">
         <div class="container">
 
             <div class="section-title">
@@ -217,7 +288,7 @@
             </div>
         </div>
     </section>
-    <section class="contact-section">
+    <section class="contact-section" id="contact">
         <div class="container">
 
             <h2 class="section-title">Let's Work Together</h2>
@@ -273,17 +344,20 @@
 
                     </form>
                     <p id="successMsg" style="display:none; color:#00ffae; margin-top:10px;">
-                         Message sent successfully! I will replay soon..
+                        Message sent successfully! I will replay soon..
                     </p>
                 </div>
 
             </div>
         </div>
     </section>
+<footer class="footer">
+    <p>© 2026 Ath Hasib. All Rights Reserved.</p>
+</footer>
 
 
 
-
+    <script src="skills.js"></script>
     <script src="contact.js"></script>
     <script src="service.js"></script>
     <script src="script.js"></script>
