@@ -18,4 +18,3 @@ window.addEventListener("scroll", () => {
         }
     });
 });
-// scrool top js 
